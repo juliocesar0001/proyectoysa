@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: crimson;
+    padding: 25px;
+    margin: 20px;
+    margin-bottom: 25px;
+}
+
+body {
+  height: 400px;
+  background-image: url("../img/fondo2.jpg");
+background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center center;
+  padding: 25px;
+  margin:25px;
+  margin-bottom: 20px;
+}
+
+ul li{
+    list-style-type: none; /* Es para sacar los puntos o guiones que siempre aparecen al costado */
+    display: inline-block;  /* Para que no esten uno abajo del otro como lista, sino uno a lado del otro*/
+    /* padding: 30px;
+    margin: 21px;
+    margin-bottom: 15px; */
+}
+
+nav ul{ /* Para separar los titulos del index */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding: 20px;
+    margin: 25px;
+    margin-bottom: 20px; */
+
+}
+
+ 
+a{ /* Se pone una a de ancla, es para todos los links */
+    text-decoration: none; /*Es para sacarle el subrayado  */
+    color: crimson;    /* Para ponerle color */
+}
+
+
+
+.contenedor{
+    max-width: 1400px;
+    margin:auto;
+}
+
+header .logo{
+    font-size: 2.5em; ;
+    margin:0;    padding: 25px 30px;
+    font-weight: bold;
+    color:darkred;
+}
+
+header.contenedor{
+
+
+}
+
+header h1{
+    font-size: 2em; ;
+    margin:0;    padding: 25px 30px;
+    font-weight: bold;
+    color:darkred;
+    text-align: center;
+}
+
+header h2{
+
+    font-size: 1.5em; ;
+    margin:0;    padding: 20px 20px;
+    font-weight: bold;
+    color:black;
+    text-align: center;
+}
+
+header h3{
+
+    font-size: 1.0em; ;
+    margin:0;    padding: 20px 20px;
+    font-weight: bold;
+    color:black;
+    text-align: center;
+}
+
+header nav{
+
+    display: flex;
+    flex-direction:column;
+    text-align:center;
+    padding-bottom: 25px;
+}
+
+footer h2{
+    font-size: 1.5em ;
+    margin:0;    padding: 25px 30px;
+    font-weight: bold;
+    color:darkred;
+}
+
+img{
+    margin-top: 80px;
+    margin-left: 200px;
+    border: 10px double blueviolet;
+    border-radius: 1cm;
+
+}
+
+.border{
+    border: 5px solid black;
+
+}
+
+.tela{
+    grid-area: tela;
+}
+
+.sublimada{
+
+    grid-area: sublimada;
+}
+
+.gamusa{
+    grid-area:gamusa;
+}
+
+.licra{
+    grid-area:licra;
+}
+
+.cuero{
+    grid-area:cuero;
+}
+
+.grilla{
+    display: grid;
+    grid-template-areas: 
+    " tela  sublimada"
+    " tela  gamusa"
+    " tela  licra"
+    " tela  cuero";
+    grid-template-columns: 20% auto ;
+    grid-template-rows: 100px 2fr 2fr 100px;
+    gap:10px;
+}
