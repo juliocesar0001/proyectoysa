@@ -1,153 +1,258 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: crimson;
-    padding: 25px;
-    margin: 20px;
-    margin-bottom: 25px;
-}
 
 body {
-  height: 400px;
-  background-image: url("../img/fondo2.jpg");
-background-size: cover;
-  background-repeat:no-repeat;
-  background-position: center center;
-  padding: 25px;
-  margin:25px;
-  margin-bottom: 20px;
-}
-
-ul li{
-    list-style-type: none; /* Es para sacar los puntos o guiones que siempre aparecen al costado */
-    display: inline-block;  /* Para que no esten uno abajo del otro como lista, sino uno a lado del otro*/
-    /* padding: 30px;
-    margin: 21px;
-    margin-bottom: 15px; */
-}
-
-nav ul{ /* Para separar los titulos del index */
+    background-image: url("../img/fondo2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    /*center center */
+    /* para bajar el footer*/
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* padding: 20px;
-    margin: 25px;
-    margin-bottom: 20px; */
-
+    flex-direction: column;
+    min-height: 100vh;
 }
 
- 
-a{ /* Se pone una a de ancla, es para todos los links */
-    text-decoration: none; /*Es para sacarle el subrayado  */
-    color: crimson;    /* Para ponerle color */
+/* Header */
+
+header {
+    padding: 25px;
+    background-color: rgb(0, 0, 0, .6);
 }
 
-
-
-.contenedor{
-    max-width: 1400px;
-    margin:auto;
-}
-
-header .logo{
-    font-size: 2.5em; ;
-    margin:0;    padding: 25px 30px;
-    font-weight: bold;
-    color:darkred;
-}
-
-header.contenedor{
-
-
-}
-
-header h1{
-    font-size: 2em; ;
-    margin:0;    padding: 25px 30px;
-    font-weight: bold;
-    color:darkred;
-    text-align: center;
-}
-
-header h2{
-
-    font-size: 1.5em; ;
-    margin:0;    padding: 20px 20px;
-    font-weight: bold;
-    color:black;
-    text-align: center;
-}
-
-header h3{
-
-    font-size: 1.0em; ;
-    margin:0;    padding: 20px 20px;
-    font-weight: bold;
-    color:black;
-    text-align: center;
-}
-
-header nav{
+header nav {
 
     display: flex;
-    flex-direction:column;
-    text-align:center;
+    flex-direction: column;
+    text-align: center;
     padding-bottom: 25px;
 }
 
-footer h2{
-    font-size: 1.5em ;
-    margin:0;    padding: 25px 30px;
-    font-weight: bold;
-    color:darkred;
+
+.n:hover{
+    transform: scale(2);
 }
 
-img{
+.index_anim{
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.productos_anim{
+    transition-property: all;
+    transition-duration: 1s;    
+}
+
+.comollegar_anim{
+    transition-property: all;
+    transition-duration: 1s;    
+}
+
+.historia_anim{
+    transition-property: all;
+    transition-duration: 1s;    
+}
+
+.contacto_anim{
+    transition-property: all;
+    transition-duration: 1s;    
+}
+
+/* main */
+
+
+main .logo {
+    font-size: 2.5em;
+    ;
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: darkred;
+}
+
+
+
+img {
     margin-top: 80px;
     margin-left: 200px;
     border: 10px double blueviolet;
     border-radius: 1cm;
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
 
-.border{
+.letraindex {
+    color: blueviolet;
+    text-align: center;
+}
+
+.historia {
+    color: black;
+    text-align: center;
+    padding: 40px;
+    margin-left: 60px;
+    margin-top: 60px;
+    margin-right: 400px;
+    border: 10px solid crimson;
+    border-radius: 50px;
+}
+
+.contenedorForm {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, .6);
+    margin: 50px 30px;
+}
+
+ .formulario .labelform {
+    padding: 26px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+} 
+
+.border {
     border: 5px solid black;
-
 }
 
-.tela{
+
+
+.tela {
     grid-area: tela;
 }
 
-.sublimada{
+.sublimada {
 
     grid-area: sublimada;
 }
 
-.gamusa{
-    grid-area:gamusa;
+.gamusa {
+    grid-area: gamusa;
 }
 
-.licra{
-    grid-area:licra;
+.licra {
+    grid-area: licra;
 }
 
-.cuero{
-    grid-area:cuero;
+.cuero {
+    grid-area: cuero;
 }
 
-.grilla{
+.grilla {
     display: grid;
-    grid-template-areas: 
-    " tela  sublimada"
-    " tela  gamusa"
-    " tela  licra"
-    " tela  cuero";
-    grid-template-columns: 20% auto ;
-    grid-template-rows: 100px 2fr 2fr 100px;
-    gap:10px;
+    grid-template-areas:
+        " tela  sublimada"
+        " tela  gamusa"
+        " tela  licra"
+        " tela  cuero";
+    grid-template-columns: repeat(2, 1fr);
+    /* El repeat es para que tenga 2 columnas iguales */
+    grid-template-rows: auto;
+    /*100px 2fr 2fr 100px;*/
+    /* gap:10px; */
 }
+
+
+
+/* footer  */
+
+footer {
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0, .6);
+    margin-top: auto;
+}
+
+
+
+ 
+@media screen and (max-width:1200px )
+{
+    .grilla{
+        display: grid;
+        grid-template-areas: 
+        " tela  sublimada"
+        " tela  gamusa"
+        " tela  licra"
+        " tela  cuero";
+        grid-template-columns: 90vw; ;
+        grid-template-rows: auto auto auto auto auto;
+    }
+
+    body {
+        background-image: url("../img/fondo2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+} 
+
+@media screen and (max-width:768px) {
+    .grilla {
+        display: grid;
+        grid-template-areas:
+            "cuero tela"
+            "cuero sublimada"
+            "gamusa gamusa"
+            "licra licra";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    body {
+        background-image: url("../img/fondo1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+}
+
+
+@media screen and (max-width:576px) {
+    .grilla {
+        display: grid;
+        grid-template-areas:
+            "tela"
+            "sublimada"
+            "gamusa"
+            "licra"
+            "cuero";
+        grid-template-columns: 90vw;
+        grid-template-rows: auto auto auto auto auto;
+    }
+
+    body {
+        background-image: url("../img/ropa3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+}
+

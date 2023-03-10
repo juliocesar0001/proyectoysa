@@ -1,72 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Mira nuestra variedad de productos y escoge el diseño que mas te guste. Indumentaria para dama.">
+    <meta name="description" content="sublimaciones,lycra,estampados,ropa">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../estilos/estilos.css">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a39fc431b3.js" crossorigin="anonymous"></script>
+    <title>Contacto</title>
 </head>
-<body>
-    
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./productos.html">Productos</a>
-                </li>
-                <li>
-                    <a href="./como_llegar.html">Como llegar</a>
-                </li>
-                <li>
-                    <a href="./historia.html">Historia</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
 
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Creacion Isa</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="n index_anim">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="n productos_anim">
+                            <a class="nav-link" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="n comollegar_anim">
+                            <a class="nav-link" href="./como_llegar.html">Como LLegar</a>
+                        </li>
+                        <li class="n historia_anim">
+                            <a class="nav-link" href="./historia.html">Historia</a>
+                        </li>
+                        <li class="n contacto_anim">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <h1>Contacto</h1>
+        <h1>contacto</h1>
+        <h2>Formulario</h2>
+        <div class="contenedorForm">
+            <form action="" class="formulario">
+                <fieldset>
+                    <legend>Contanos de vos</legend>
+                    <div>
+                        <label class="labelform" for="nombre">Decinos tu nombre</label>
+                        <input type="text" class="inputText" name="nombre" id="nombre" placeholder="escriba su nombre"
+                            required>
+                        <!-- El required es para que indique si esta vacio al momento de enviar -->
 
-        <form action="">
-            <fieldset>
-                <legend>Contanos de vos</legend>
-                <div>
-                    <label for="nombre">Decinos tu nombre</label>
-                    <input type="text" name="nombre" id="nombre">
-                    <label for="correo">Decinos tu correo</label>
-                    <input type="text" name="correo" id="correo">
-                </div>
-                <div>
-                    <label for="">De que zona sos</label>
-                    <select name="" id="">
-                        <option value="">Flores</option>
-                        <option value="">Mataderos</option>
-                        <option value="">Parque Avellaneda</option>
-                    </select>
+                    </div>
 
-                </div>
+                    <div>
+                        <label class="labelform" for="pais">De que pais sos</label>
+                        <select name="pais" id="pais">
+                            <option value="arg">Argentina</option>
+                            <option value="peru">Peru</option>
+                            <option value="ven">Venezuela</option>
+                        </select>
+                    </div>
 
-            </fieldset>
+                    <div>
+                        <label class="labelform" for="numero">Tu numero</label>
+                        <input type="tel" class="inputText" name="numero" id="numero" placeholder="escriba numero">
+                    </div>
 
 
-        </form>
+                    <div>
+                        <label class="labelform" for="edad">Decinos tu edad</label>
+                        <input type="number" class="inputText" name="edad" id="edad" placeholder="escriba su edad">
+                    </div>
+
+
+                    <div>
+                        <label class="labelform" for="fecha">Fecha de nac</label>
+                        <input type="date" name="fecha" id="fecha">
+                    </div>
+
+                    <div>
+                        <label for="comentario">Dejanos tu comentario</label>
+                        <textarea name="comentario" id="comentario" cols="30" rows="10"
+                            placeholder="Contanos como podemos mejorar"></textarea>
+                    </div>
+
+                    <div>
+                        <h3>donde nos conociste</h3>
+                        <input type="checkbox" name="insta" id="insta">
+                        <label for="inta">Instagram</label>
+                        <input type="checkbox" name="face" id="face">
+                        <label for="face">Facebook</label>
+                        <input type="checkbox" name="ngl" id="ngl">
+                        <label for="ngl">NGL</label>
+                    </div>
+
+                    <input type="submit" value="enviar">
+
+                </fieldset>
+
+            </form>
+        </div>
+
     </main>
 
     <footer>
         <h2>Nuestas redes Sociales</h2>
         <div>
-        <a href="https://www.instagram.com/"target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a>
-        <a href="https://es-la.facebook.com/"target="_blank"><i class="fa-brands fa-facebook"></i>Facebook</a>
-        <a href="https://www.whatsapp.com/?lang=es"target="_blank"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
-    </div>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a>
+            <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i>Facebook</a>
+            <a href="https://www.whatsapp.com/?lang=es" target="_blank"><i
+                    class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+        </div>
     </footer>
 </body>
+
 </html>
