@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     background-image: url("../img/fondo2.jpg");
     background-size: cover;
@@ -34,33 +33,33 @@ header nav {
 }
 
 
-.n:hover{
+.n:hover {
     transform: scale(2);
 }
 
-.index_anim{
+.index_anim {
     transition-property: all;
     transition-duration: 1s;
 }
 
-.productos_anim{
+.productos_anim {
     transition-property: all;
-    transition-duration: 1s;    
+    transition-duration: 1s;
 }
 
-.comollegar_anim{
+.comollegar_anim {
     transition-property: all;
-    transition-duration: 1s;    
+    transition-duration: 1s;
 }
 
-.historia_anim{
+.historia_anim {
     transition-property: all;
-    transition-duration: 1s;    
+    transition-duration: 1s;
 }
 
-.contacto_anim{
+.contacto_anim {
     transition-property: all;
-    transition-duration: 1s;    
+    transition-duration: 1s;
 }
 
 /* main */
@@ -82,7 +81,6 @@ img {
     width: 500px;
     margin-left: 0px;
     margin-bottom: 100px;
-    border: 10px double red;
     border-radius: 1cm;
     display: flex;
     flex-direction: row;
@@ -91,7 +89,7 @@ img {
     align-content: center;
 }
 
-.row{
+.row {
     flex-shrink: 0;
     width: 100%;
     max-width: 100%;
@@ -100,7 +98,13 @@ img {
     margin-top: var(--bs-gutter-y);
 }
 
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     width: 100%;
@@ -109,6 +113,7 @@ img {
     margin-right: auto;
     margin-left: auto;
 }
+
 .carousel-indicators {
     position: absolute;
     right: 0;
@@ -123,6 +128,7 @@ img {
     margin-left: 15%;
     list-style: none;
 }
+
 .carousel {
     position: relative;
 }
@@ -169,11 +175,11 @@ img {
     margin: 50px 30px;
 }
 
- .formulario .labelform {
+.formulario .labelform {
     padding: 26px;
     margin-top: 20px;
     margin-bottom: 20px;
-} 
+}
 
 .border {
     border: 5px solid black;
@@ -212,11 +218,128 @@ img {
     grid-template-columns: repeat(2, 1fr);
     /* El repeat es para que tenga 2 columnas iguales */
     grid-template-rows: auto;
-    /*100px 2fr 2fr 100px;*/
-    /* gap:10px; */
 }
 
 
+/* Grilla de productos */
+
+.main-productos {
+    padding: 3rem;
+    margin-left: 0;
+    margin: 1rem;
+    border-radius: 2rem;
+}
+
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2px 16px;
+}
+
+
+.producto:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.producto-imagen {
+    width: 250px;
+    height: 250px;
+    /*para que la imagen se adapte*/
+    border-radius: 1rem;
+}
+
+.producto-titulo {
+    font-size: 1rem;
+}
+
+.producto-detalle {
+    background-color: rgb(7, 0, 0, 0.6);
+    color: white;
+    padding: .5rem;
+    border-radius: 1rem;
+    margin-top: -2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.producto-agregar {
+    border: none;
+    background-color: white;
+    padding: .4rem;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: 2px solid white;
+    transition-duration: 0.4s;
+}
+
+.producto-agregar:hover {
+    background-color: #4CAF50;
+    /* Green */
+    color: white;
+}
+
+
+/* Formulario de contacto */
+
+.form-register {
+    width: 400px;
+    background-color: rgb(0, 0, 0, .6);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    width: 100%;
+    background-color: rgb(0, 0, 0, .6);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid rgb(0, 0, 0, .6);
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-register a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 100%;
+    background-color: rgb(0, 0, 0, .6);
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
 
 /* footer  */
 
@@ -232,19 +355,30 @@ footer {
     margin-top: auto;
 }
 
+.copyright {
+    font-size: .85rem;
+    text-align: start;
+    color: var(--bs-heading-color, inherit);
+}
+
+.texto-footer {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--bs-heading-color, inherit);
+}
 
 
- 
-@media screen and (max-width:1200px )
-{
-    .grilla{
+@media screen and (max-width:1200px) {
+    .grilla {
         display: grid;
-        grid-template-areas: 
-        " tela  sublimada"
-        " tela  gamusa"
-        " tela  licra"
-        " tela  cuero";
-        grid-template-columns: 90vw; ;
+        grid-template-areas:
+            " tela  sublimada"
+            " tela  gamusa"
+            " tela  licra"
+            " tela  cuero";
+        grid-template-columns: 90vw;
+        ;
         grid-template-rows: auto auto auto auto auto;
     }
 
@@ -259,7 +393,7 @@ footer {
         min-height: 100vh;
     }
 
-} 
+}
 
 @media screen and (max-width:768px) {
     .grilla {
@@ -310,4 +444,3 @@ footer {
         min-height: 100vh;
     }
 }
-

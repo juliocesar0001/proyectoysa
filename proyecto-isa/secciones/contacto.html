@@ -19,7 +19,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <section class="container-fluid">
-                <a class="navbar-brand" href="#">Creacion Isa</a>
+                <a class="navbar-brand" href="../index.html">Creacion Isa</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -51,78 +51,30 @@
     <main>
         <h1>contacto</h1>
         <h2>Formulario</h2>
-        <section class="contenedorForm">
-            <form action="" class="formulario">
-                <fieldset>
-                    <legend>Contanos de vos</legend>
-                    <div>
-                        <label class="labelform" for="nombre">Decinos tu nombre</label>
-                        <input type="text" class="inputText" name="nombre" id="nombre" placeholder="escriba su nombre"
-                            required>
-                        <!-- El required es para que indique si esta vacio al momento de enviar -->
 
-                    </div>
-
-                    <div>
-                        <label class="labelform" for="pais">De que pais sos</label>
-                        <select name="pais" id="pais">
-                            <option value="arg">Argentina</option>
-                            <option value="peru">Peru</option>
-                            <option value="ven">Venezuela</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label class="labelform" for="numero">Tu numero</label>
-                        <input type="tel" class="inputText" name="numero" id="numero" placeholder="escriba numero">
-                    </div>
-
-
-                    <div>
-                        <label class="labelform" for="edad">Decinos tu edad</label>
-                        <input type="number" class="inputText" name="edad" id="edad" placeholder="escriba su edad">
-                    </div>
-
-
-                    <div>
-                        <label class="labelform" for="fecha">Fecha de nac</label>
-                        <input type="date" name="fecha" id="fecha">
-                    </div>
-
-                    <div>
-                        <label for="comentario">Dejanos tu comentario</label>
-                        <textarea name="comentario" id="comentario" cols="30" rows="10"
-                            placeholder="Contanos como podemos mejorar"></textarea>
-                    </div>
-
-                    <div>
-                        <h3>donde nos conociste</h3>
-                        <input type="checkbox" name="insta" id="insta">
-                        <label for="inta">Instagram</label>
-                        <input type="checkbox" name="face" id="face">
-                        <label for="face">Facebook</label>
-                        <input type="checkbox" name="ngl" id="ngl">
-                        <label for="ngl">NGL</label>
-                    </div>
-
-                    <input type="submit" value="enviar">
-
-                </fieldset>
-
-            </form>
-        </section>
+        <form action="">
+            <section class="form-register">
+                <h3>Formulario de registro</h3>
+                <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre">
+                <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su apellido">
+                <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su correo">
+                <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su contraseña">
+                <p>Estoy de acuerdo con <a href="">Terminos y condiciones</a></p>
+                <input class="botons" type="submit" value="Registrar">
+                <p><a href="">¿Ya tengo cuenta?</a></p>
+            </section>
+        </form>
 
     </main>
 
     <footer>
-        <h2>Nuestas redes Sociales</h2>
-        <div>
-            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a>
-            <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i>Facebook</a>
-            <a href="https://www.whatsapp.com/?lang=es" target="_blank"><i
-                    class="fa-brands fa-whatsapp"></i>Whatsapp</a>
-        </div>
-    </footer>
+        <p class="texto-footer">Nuestas redes Sociales</p>
+        <section>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a>
+          <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i>Facebook</a>
+          <a href="https://www.whatsapp.com/?lang=es" target="_blank"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+        </section>
+      </footer>
 </body>
 
 </html>
