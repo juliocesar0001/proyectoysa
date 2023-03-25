@@ -1,0 +1,10 @@
+@mixin formulario_letra{
+    color: red;
+    text-align: center;
+    padding: 40px;
+    margin-right: 400px;
+}
+
+.formulario-letra{
+    @include formulario_letra;
+}
