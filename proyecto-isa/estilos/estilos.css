@@ -219,7 +219,7 @@ img {
     border-radius: 2rem;
 }
 
-.contenedor-productos {
+#contenedorProductos{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
