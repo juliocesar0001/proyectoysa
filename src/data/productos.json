@@ -1,0 +1,55 @@
+[
+    {
+        "id":1,
+        "nombre":"Gmc",
+        "modelo":"sabana",
+        "precio":200,
+        "categoria":"sublimada",
+        "img":"https://puntolinea.com.ar/wp-content/uploads/2020/05/remera-sublimada-04.jpg"
+    },
+    {
+        
+        "id":2,
+        "nombre":"Gasadmc",
+        "modelo":"sabanasdasa",
+        "precio":2020,
+        "categoria":"gamusa",
+        "img":"https://puntolinea.com.ar/wp-content/uploads/2020/05/remera-sublimada-04.jpg"
+    },
+    {
+        
+        "id":3,
+        "nombre":"Gasadmc",
+        "modelo":"sabanasdasa",
+        "precio":2020,
+        "categoria":"sublimada",
+        "img":"https://puntolinea.com.ar/wp-content/uploads/2020/05/remera-sublimada-04.jpg"
+    },
+    {
+        
+        "id":4,
+        "nombre":"Gasadmc",
+        "modelo":"sabanasdasa",
+        "precio":2020,
+        "categoria":"jaspeado",
+        "img":"https://puntolinea.com.ar/wp-content/uploads/2020/05/remera-sublimada-04.jpg"
+    },
+    {
+        
+        "id":5,
+        "nombre":"Gasadmc",
+        "modelo":"sabanasdasa",
+        "precio":2020,
+        "categoria":"gamusa",
+        "img":"https://puntolinea.com.ar/wp-content/uploads/2020/05/remera-sublimada-04.jpg"
+    },
+    {
+        
+        "id":6,
+        "nombre":"Gasadmc",
+        "modelo":"sabanasdasa",
+        "precio":2020,
+        "categoria":"sadblack",
+        "img":"https://puntolinea.com.ar/wp-content/uploads/2020/05/remera-sublimada-04.jpg"
+    }
+]

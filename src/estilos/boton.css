@@ -1,0 +1,41 @@
+.Cont{
+    background-color:blueviolet;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    font-family: Roboto,sans-serif;
+    font-weight: bold;
+    color:white;
+    border: 2x solid white;
+    border-radius: 10px;
+    margin:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color: #00471b;
+}
+
+.botonMas{
+    background-color: #002ead;
+}
+
+.botonMenos{
+    background-color: #5a01a7;
+}
+
+.contador{
+    min-width: 100px;
+    height: 100px;
+    font-size: 120px;
+    padding: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:5px solid white;
+    margin-bottom: 15px;
+}
