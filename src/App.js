@@ -22,7 +22,7 @@ function App(){
 		promise.then(data =>setPeople(data))
 	}, [])
 
-  //Routes es como un switch case
+  //Routes es como un switch case as
     return (
         <CartProvider>
  <BrowserRouter>
