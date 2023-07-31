@@ -12,12 +12,12 @@ export const ItemListContainer=props=>{
 
 useEffect(()=>{
   const promesa=new Promise((resolve,rejected)=>{
-    setTimeout(()=>{
+    setTimeout(()=>{ //Esta funcion hace el emulador de retraso de 2 segundos. PROMESA
       resolve(data)
     },2000)
 })
-  promesa.then(result=>{
-    if(id){
+  promesa.then(result=>{  //Para que la promesa devuelva algo.
+    if(id){   //Actualizamosss
       setProduct(result.filter(product=>product.categoria===id))
     }else{
       setProduct(result)
@@ -28,7 +28,8 @@ useEffect(()=>{
   return(
     <Container>
       <div>{props.greeting}</div>
-    {product.length===0 ?(<div>Loading...</div>):(<ItemList product={product}/>)}
+    {product.length===0 //Cuando renderizo por primera vez este vale cero.
+    ?(<div>Loading...</div>):(<ItemList product={product}/>)}
     </Container>
   )
 }

@@ -14,7 +14,7 @@ export const Item=({remera})=>{
 			<Card.Img variant="top" src={remera.img}/>
 			<Card.Body>
 			<Card.Title>{remera.modelo}</Card.Title>
-			<Card.Text>categoria: {remera.categoria}</Card.Text>
+			<Card.Text>Categoria: {remera.categoria}</Card.Text>
 			<Link to={ `/item/${remera.id}`}>
 				<Button variant="primary">Ver datalle</Button>
 			</Link>
